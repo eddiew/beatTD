@@ -483,7 +483,7 @@ void ofApp::areaHit(ofPoint& center, float radius, float damage, float tNote, co
 		enemyIt++;
 	}
 	// add decal
-	circleDecal *hitDecal = new circleDecal(tNote, 1, center, ofColor(color.r, color.g, color.g, color.a * (64./255)), radius * h, decal::FADE);
+	circleDecal *hitDecal = new circleDecal(tNote, 1, center, ofColor(color.r, color.g, color.b, color.a * (64./255)), radius * h, decal::FADE);
 	circleDecal *hitDecal2 = new circleDecal(tNote, 0.5, center, ofColor(color.r, color.g, color.b, color.a * (128. / 255)), radius * h, decal::FADE | decal::GROW);
 	circleDecal *hitDecal3= new circleDecal(tNote, 1, center, ofColor(color.r, color.g, color.b, color.a * (128. / 255)), radius * h / 2, decal::SHRINK | decal::FADEIN);
 	decals.insert(hitDecal);
